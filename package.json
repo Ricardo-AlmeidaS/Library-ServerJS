@@ -1,0 +1,22 @@
+{
+  "name": "zero",
+  "version": "1.0.0",
+  "description": "(Aplicativo inicial)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.17.3",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
