@@ -2,10 +2,10 @@
   "name": "zero",
   "version": "1.0.0",
   "description": "(Aplicativo inicial)",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "mongoose": "^7.3.4"
   },
   "devDependencies": {
+    "eslint": "^8.52.0",
     "nodemon": "^3.0.1"
   }
 }
