@@ -63,7 +63,7 @@ project-root-directory
 │   ├── app.js
 │   ├── config 
 │   │   └── dbConfig.js
-│   ├── Err
+│   ├── Error
 │   │   ├──badRequest.js
 │   │   ├──baseErr.js
 │   │   ├── notfound.js
@@ -73,7 +73,7 @@ project-root-directory
 │   │   └── booksController.js
 │   ├── middleware
 │   │   ├── errorHandling.js
-│   │   ├── Handler404.js
+│   │   ├── Handle404.js
 │       └── pagination.js
 │   ├── models
 │   │   ├── Author.js
