@@ -1,27 +1,27 @@
 import express from "express";
 import connectNaDatabase from "./config/dbConnect.js";
 import routes from "./routes/index.js";
-import manipuladorDeErros from "./middlewares/manipuladorDeErros.js";
-import manipulador404 from "./middlewares/manipulador404.js";
+import errorHandling from "./middlewares/errorHandling.js";
+import Handler404 from "./middlewares/Handle404.js";
 
 const conexao = await connectNaDatabase();
 
 // Conexões feitas atraves do mongoose
 conexao.on("error", (erro) => {
-  console.error("erro de conexão", erro);
+  console.error("connection error", erro);
 });
 
 conexao.once("open", () => {
-  console.log("Conexão com o banco de dados feita com sucesso");
+  console.log("database connection successful");
 });
 
 const app = express();
 app.use(express.json());
 routes(app);
 
-app.use(manipulador404);
+app.use(Handler404);
 
 // eslint-disable-next-line no-unused-vars
-app.use(manipuladorDeErros);
+app.use(errorHandling);
 
 export default app;

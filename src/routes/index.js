@@ -1,11 +1,13 @@
 import express from "express";
-import livros from "./livrosroutes.js";
-import autores from "./autoresRoutes.js";
+import books from "./booksRoutes.js";
+import authors from "./authorsRoutes.js";
 
 const routes = (app) => {
-  app.route("/").get((req, res) => res.status(200).send("Curso de node.js"));
+  app
+    .route("/")
+    .get((req, res) => res.status(200).send("welcome to your virtual library"));
 
-  app.use(express.json(), livros, autores);
+  app.use(express.json(), books, authors);
 };
 
 export default routes;
