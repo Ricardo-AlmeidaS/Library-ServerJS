@@ -20,6 +20,8 @@ To run this project, you'll need to have Node.js and MongoDB installed on your s
 
 ## Routes
 
+Note: This API utilizes JSON (JavaScript Object Notation) for data exchange. When interacting with the routes, ensure that your responses are in JSON format. Follow the 'Entities' topic to ensure that requests work properly.
+
 | Action                     | Endpoint                                           | Description                                           |
 |----------------------------|----------------------------------------------------|-------------------------------------------------------|
 | List Books                 | [http://localhost:3000/books](http://localhost:3000/books)           | Endpoint to list all books                            |
